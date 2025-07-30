@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <title>설문조사 양식</title>
+    </head>
+    <body>
+        <header>
+             <h1>설문조사 양식</h1>
+           <p>모든 항목에 빠짐없이 체크해주십시오.</p>
+        </header>
+        <hr>
+        <main>
+            <form> 
+                <fieldset>
+                    <legend>개인정보</legend>
+                    <label for="name">이름</label>
+                    <input type="text" 
+                    name="name"
+                    id="name" placeholder="본명으로 입력">
+                    <br>
+                    <label for="email">이메일</label>
+                    <input type="email" 
+                    name="email"
+                    id="email" placeholder="@를 포함한 양식">
+                </fieldset>
+                <fieldset>
+                    <legend>설문</legend>
+                    
+                    <h3>좋아하는 숫자는 무엇입니까?</h3>
+                    <input type="radio" id="one" name="number">
+                    <label for="one">1</label>
+                    <input type="radio" id="two" name="number">
+                    <label for="two">2</label>
+                    <input type="radio" id="three" name="number">
+                    <label for="three">3</label>
+                    <input type="radio" id="four" name="number">
+                    <label for="four">4</label>
+                    <input type="radio" id="five" name="number">
+                    <label for="five">5</label>
+                    <input type="radio" id="six" name="number">
+                    <label for="six">6</label>
+                    <input type="radio" id="seven" name="number">
+                    <label for="seven">7</label>
+
+                    <h3>해당 숫자를 고른 이유는 무엇입니까? (중복 가능)</h3>
+                    <input type="checkbox" id="cool" name="reason">
+                    <label for="cool">멋져서</label>
+                    <input type="checkbox" id="like" name="reason">
+                    <label for="like">좋아서</label>
+                    <input type="checkbox" id="lucky" name="reason">
+                    <label for="lucky">행운의 숫자라서</label>
+                    <input type="checkbox" id="pretty" name="reason">
+                    <label for="pretty">예뻐서</label>
+                    <input type="checkbox" id="just" name="reason">
+                    <label for="just">그냥</label>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>로또 번호 추천</legend>
+                    <textarea rows="3" cols="30" name="recommend"></textarea>
+                </fieldset>
+                <input type="submit">
+            </form>
+        </main>
+        <hr>
+        <footer>
+        <p>추천 감사합니다.</p>
+        </footer>
+    </body>
+</html>
