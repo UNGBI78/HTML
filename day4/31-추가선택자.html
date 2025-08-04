@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <title>선택자 더 알아보기</title>
+  <style>
+    /* 
+    기호와 함께 사용하는 속성 선택자
+    * : 값의 포함 여부
+    ^ : 값의 시작 여부
+    $ : 값의 끝 여부
+     */
+    [width $= "0"]{
+      border: 5px dashed red;
+    }
+
+    p > em{
+      color: blue;
+    }
+    
+    #sam ~ p{
+      color: orange;
+    }
+
+  </style>
+</head>
+<body>
+<img src="image/hotel.png" width="120" alt="호텔">
+<img src="image/hotel.png" width="120">
+<img src="image/hotel.png" width="120" id="sam">
+<p>이것은 호텔을 표현한 사진 입니다.</p>
+<p>이것은 호텔을 표현한 사진 입니다.</p>
+<p>이것은 <em>호텔을 표현한</em> 사진 입니다.</p>
+<p>이것은 호텔을 표현한 사진 입니다.</p>
+</body>
+</html>
